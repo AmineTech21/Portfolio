@@ -1,0 +1,89 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.header__container h5 {
+    font-size: 17px;
+}
+
+/*=========== cta =========*/
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*============ header social =========*/
+.header__socials-icon {
+    font-size: 1.5rem;
+}
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-white);
+}
+
+
+/*============================IMAGE ===================== */
+
+.me {
+    background: linear-gradient(var(--color-bg-variant), transparent);
+    width: 22rem;
+    height: 20rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+/*============================ Scroll down ===================== */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300 ;
+    font-size: 0.9rem;
+}
+
+/* ========================== Tablet ====================== */
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 68vh;
+    }
+}
+
+/* ========================== Phones ====================== */
+@media screen and (max-width: 600px) {
+  .header {
+      height: 40vh !important;
+  }
+
+  .header__socials, .scroll__down {
+      display: none;
+  }
+}
